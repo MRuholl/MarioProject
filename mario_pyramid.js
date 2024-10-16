@@ -42,12 +42,12 @@ function printPyramid(height) {
       }
     console.log(str);  //once a row is done we print it out
     
-    let newStr = str.split("\n");
+    let newStr = str.split("\n"); //splits the string and makes it an array
     let line = "";  
-    newStr.forEach(newLine);
+    newStr.forEach(newLine);      //iterate through the each entry of the array
     document.getElementById("pyramid").innerHTML = line;
 
-    function newLine(value, index, array){
+    function newLine(value, index, array){  // each pyramid layer starts on a new line.
       line += value + "<br>";
     }
     
