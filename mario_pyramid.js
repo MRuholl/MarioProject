@@ -39,13 +39,16 @@ function printPyramid(height) {
              
         }
         str += "#\n"; //adds a # to the string so that the top doesn't end with only 1 #
-        
       }
-      console.log(str);  //once a row is done we print it out
-      
-      const para = document.createElement("p");
-      const node = document.createTextNode(str);
-      para.appendChild(node);
-      const element = document.getElementById("pyramid");
-      element.appendChild(para);
+    console.log(str);  //once a row is done we print it out
+    
+    let newStr = str.split("\n");
+    let line = "";  
+    newStr.forEach(newLine);
+    document.getElementById("pyramid").innerHTML = line;
+
+    function newLine(value, index, array){
+      line += value + "<br>";
     }
+    
+}
