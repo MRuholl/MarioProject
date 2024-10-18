@@ -1,27 +1,14 @@
-let pyramidHeight = prompt("How many layers should the pyramid have?");
-pyramidHeight = parseInt(pyramidHeight);
+function determineHeightAndThenDrawPyramid(){
+    let userInput = document.getElementById("height");  //retrieves typed height
+    let pyramidHeight = parseInt(userInput.value);    //converts typed height to integer
+  
+    printPyramid(pyramidHeight);
 
-printPyramid(pyramidHeight);
-// TODO #2
-// Take in user input for the height
+}
 
 
-
-/*
- * printPyramid
- *
- * Prints to the console a pyramid of '#' characters of the specified height
- * For example, if height is 5, the console will look like this:
- *          ##
- *         ###
- *        ####
- *       #####
- *      ######
- */
 function printPyramid(height) {
 
-    // TODO #1
-    // print that pyramid!
 
     let rows = height;
     let str = "";
